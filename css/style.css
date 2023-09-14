@@ -269,7 +269,7 @@ a:hover {
   margin-top: 5px;
   width: 90%;
   height: 3em;
-  border: none;
+  border: 1px solid black;
   border-radius: 5px;
   padding: 10px;
   outline: none;
