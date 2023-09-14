@@ -184,22 +184,42 @@ a:hover {
 }
 /* page 1 end */
 
-.content {
-  height: 100vh;
+/* Content Start */
+.coverLuas {
   display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.coverKeliling {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.content {
+  display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  width: 70%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 .content2 {
-  height: 100vh;
-  display: none;
+  display: flex;
   flex-direction: column;
-  padding-top: 70px;
+  width: 70%;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
 .content .judul,
 .content2 .judul {
-  padding: 15px;
   text-align: center;
 }
 .content .subconten1,
@@ -262,7 +282,7 @@ a:hover {
   border: 1px solid rgb(20, 247, 8);
 }
 .content .hitungLuas .hasil {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 #rumusLuas,
 #jumlahLuas,
@@ -372,6 +392,10 @@ a:hover {
   }
   .btnDrop .pPanjang ul li a::after {
     font-size: 8px;
+  }
+  .content,
+  .content2 {
+    width: 90%;
   }
   .content .rumus,
   .content2 .rumus,

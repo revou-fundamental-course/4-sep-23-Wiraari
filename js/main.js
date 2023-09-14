@@ -17,33 +17,37 @@ liNav.forEach(function (li) {
 const htgLuas = document.getElementById("pHtgLuas");
 const htgKeliling = document.getElementById("pHtgKlg");
 const container = document.getElementById("container");
-const content = document.getElementById("content");
-const content2 = document.getElementById("content2");
+const coverKeliling = document.querySelector(".coverKeliling");
+const coverLuas = document.querySelector(".coverLuas");
 const home = document.getElementById("home");
 const homeIcons = document.querySelector(".icons");
 
 htgLuas.addEventListener("click", () => {
-  content.style.display = "flex";
+  coverLuas.style.display = "flex";
   container.style.display = "none";
-  content2.style.display = "none";
+  coverKeliling.style.display = "none";
 });
 htgKeliling.addEventListener("click", () => {
-  content2.style.display = "flex";
+  coverKeliling.style.display = "flex";
   container.style.display = "none";
-  content.style.display = "none";
+  coverLuas.style.display = "none";
 });
 
 home.addEventListener("click", () => {
   container.style.display = "flex";
-  content.style.display = "none";
-  content2.style.display = "none";
+  coverKeliling.style.display = "none";
+  coverLuas.style.display = "none";
 });
 
 homeIcons.addEventListener("click", () => {
-  content.style.display = "none";
-  content2.style.display = "none";
+  coverKeliling.style.display = "none";
+  coverLuas.style.display = "none";
   container.style.display = "flex";
 });
+// coverPersegi.addEventListener("click", () => {
+//   container.style.display = "none";
+//   content.style.display = "flex";
+// });
 
 // hitungLuas
 

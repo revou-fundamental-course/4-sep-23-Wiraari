@@ -71,63 +71,68 @@
             </div>
         </div>
     </div>
-
-    <div class="content" id="content">       
-        <div class="judul">
-            <h2>Luas Persegi</h1>
-        </div>
-        <div class="subconten1">
-            <img src="img/persegi.png" alt="persegi">
-        </div>
-        <div class="rumus">
-            <p> Rumus Luas Persegi yaitu : L = S X S</p>
-            <p> Dimana : <br> L = Luas <br> S = Sisi</p>
-        </div>
-        
-
-        <div class="hitungLuas">
-            <h2>Hitung Luas Persegi</h2>
-            <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
-            <input type="text" id="sisiLuas" onkeypress="return validasiNumber(event)" placeholder="Nilai sisi">
-            <div class="hasil">
-                <p id="rumusLuas"></p>
-                <p id="jumlahLuas"></p>
+    <div class="coverLuas">
+        <div class="content" id="content">       
+            <div class="judul">
+                <h2>Luas Persegi</h1>
             </div>
+            <div class="subconten1">
+                <img src="img/persegi.png" alt="persegi">
+            </div>
+            <div class="rumus">
+                <p> Rumus Luas Persegi yaitu : L = S X S</p>
+                <p> Dimana : <br> L = Luas <br> S = Sisi</p>
+            </div>
+            
 
-            <div class="btn">    
-                <button onclick="hitungLuas()">Hitung</button>
-                <button id="reset" onclick="reset()">Reset</button>
-            </div>        
+            <div class="hitungLuas">
+                <h2>Hitung Luas Persegi</h2>
+                <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
+                <input type="text" id="sisiLuas" onkeypress="return validasiNumber(event)" placeholder="Nilai sisi">
+                <div class="hasil">
+                    <p id="rumusLuas"></p>
+                    <p id="jumlahLuas"></p>
+                </div>
+
+                <div class="btn">    
+                    <button onclick="hitungLuas()">Hitung</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                </div>        
+            </div>
         </div>
     </div>
-    <div class="content2" id="content2">
-        <div class="judul">
-            <h2>Keliling Persegi</h1>
-        </div>
-        <div class="subconten1">
-            <img src="img/persegi.png" alt="persegi">
-        </div>
-        <div class="rumus">
-            <p> Rumus Luas Persegi yaitu : K = 4 X S</p>
-            <p> Dimana : <br> K = Keliling <br> S = Sisi</p>
-        </div>
-        
-
-        <div class="hitungLuas">
-            <h2>Hitung Luas Persegi</h2>
-            <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
-            <input type="text" id="sisiKeliling" onkeypress="return validasiNumber(event)" placeholder="Nilai sisi">
-            <div class="hasil">
-                <p id="rumusKeliling"></p>
-                <p id="jumlahKeliling"></p>
+    
+    <div class="coverKeliling">
+        <div class="content2" id="content2">
+            <div class="judul">
+                <h2>Keliling Persegi</h1>
             </div>
-
-            <div class="btn">    
-                <button onclick="hitungKeliling()">Hitung</button>
-                <button id="reset" onclick="reset()">Reset</button>
-            </div>        
+            <div class="subconten1">
+                <img src="img/persegi.png" alt="persegi">
+            </div>
+            <div class="rumus">
+                <p> Rumus Luas Persegi yaitu : K = 4 X S</p>
+                <p> Dimana : <br> K = Keliling <br> S = Sisi</p>
+            </div>
+            
+    
+            <div class="hitungLuas">
+                <h2>Hitung Luas Persegi</h2>
+                <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
+                <input type="text" id="sisiKeliling" onkeypress="return validasiNumber(event)" placeholder="Nilai sisi">
+                <div class="hasil">
+                    <p id="rumusKeliling"></p>
+                    <p id="jumlahKeliling"></p>
+                </div>
+    
+                <div class="btn">    
+                    <button onclick="hitungKeliling()">Hitung</button>
+                    <button id="reset" onclick="reset()">Reset</button>
+                </div>        
+            </div>
         </div>
     </div>
+    
 
     <script src="js/main.js"></script>
 </body>
