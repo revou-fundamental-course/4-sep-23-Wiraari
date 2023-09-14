@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Persegi</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Wira-B</label>
+        <ul>
+          <li><a href="#" id="home">Beranda</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Tentang</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
+    <div class="container" id="container">
+        <div class="selection1">
+            <h1>Welcome to <span>Kaltik</span></h1>
+            <p>Hai Sobat, Selamat datang di Katik :)
+            </p>
+            <p>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung luas dan keliling bangunan datar
+            </p>
+    
+            <div class="btnDrop">
+                <div class="persegi">
+                    <ul>
+                        <li><a href="#"> Persegi
+                            <i class="fa-solid fa-sort-down"></i>
+                            </a>
+                            
+                            <ul class="dropdown">
+                                <li><a href="#" id="pHtgLuas">Htg Luas</a></li>
+                                <li><a href="#" id="pHtgKlg">Htg Keliling</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="pPanjang">
+                    <ul>
+                        <li><a href="#">P. Panjang 
+                            <i class="fa-solid fa-sort-down"></i>
+                        </a>
+                        <ul class="dropdown">
+                            <li><a href="#">Htg Luas</a></li>
+                            <li><a href="#">Htg Keliling</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="content" id="content">
+        <div class="judul">
+            <h2>Luas Persegi</h1>
+        </div>
+        <div class="subconten1">
+            <img src="img/persegi.png" alt="persegi">
+        </div>
+        <div class="rumus">
+            <p> Rumus Luas Persegi yaitu : L = S X S</p>
+            <p> Dimana : <br> L = Luas <br> S = Sisi</p>
+        </div>
+        
+
+        <div class="hitungLuas">
+            <h2>Hitung Luas Persegi</h2>
+            <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
+            <input type="text" id="sisiLuas" placeholder="Nilai sisi">
+            <div class="hasil">
+                <p id="rumusLuas"></p>
+                <p id="jumlahLuas"></p>
+            </div>
+
+            <div class="btn">    
+                <button onclick="hitungLuas()">Hitung</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>        
+        </div>
+    </div>
+    <div class="content2" id="content2">
+        <div class="judul">
+            <h2>Keliling Persegi</h1>
+        </div>
+        <div class="subconten1">
+            <img src="img/persegi.png" alt="persegi">
+        </div>
+        <div class="rumus">
+            <p> Rumus Luas Persegi yaitu : K = 4 X S</p>
+            <p> Dimana : <br> K = Keliling <br> S = Sisi</p>
+        </div>
+        
+
+        <div class="hitungLuas">
+            <h2>Hitung Luas Persegi</h2>
+            <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
+            <input type="text" id="sisiKeliling" placeholder="Nilai sisi">
+            <div class="hasil">
+                <p id="rumusKeliling"></p>
+                <p id="jumlahKeliling"></p>
+            </div>
+
+            <div class="btn">    
+                <button onclick="hitungKeliling()">Hitung</button>
+                <button id="reset" onclick="reset()">Reset</button>
+            </div>        
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
