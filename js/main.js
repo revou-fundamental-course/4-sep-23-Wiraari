@@ -20,6 +20,7 @@ const container = document.getElementById("container");
 const content = document.getElementById("content");
 const content2 = document.getElementById("content2");
 const home = document.getElementById("home");
+const homeIcons = document.querySelector(".icons");
 
 htgLuas.addEventListener("click", () => {
   content.style.display = "flex";
@@ -36,6 +37,12 @@ home.addEventListener("click", () => {
   container.style.display = "flex";
   content.style.display = "none";
   content2.style.display = "none";
+});
+
+homeIcons.addEventListener("click", () => {
+  content.style.display = "none";
+  content2.style.display = "none";
+  container.style.display = "flex";
 });
 
 // hitungLuas
@@ -68,6 +75,16 @@ function hitungKeliling() {
 
   rumusKel.classList.add("show");
   hasilKel.classList.add("show");
+}
+// Validasi
+function validasiNumber(event) {
+  var charCode = event.which ? event.which : event.keyCode;
+
+  if (charCode < 48 || charCode > 57) {
+    return false;
+  }
+
+  return true;
 }
 // reset
 function reset() {

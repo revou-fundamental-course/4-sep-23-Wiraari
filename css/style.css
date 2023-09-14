@@ -46,6 +46,12 @@ nav ul li a {
   border-radius: 5px;
   text-transform: uppercase;
 }
+#home {
+  background: #e66400;
+}
+#home:hover {
+  background: #f89447;
+}
 a.active,
 a:hover {
   background-color: #1b9bff;
@@ -61,6 +67,18 @@ a:hover {
 }
 #check {
   display: none;
+}
+.iconsHome .icons {
+  font-size: 28px;
+  color: #fff;
+  transition: all 0.5s;
+  display: none;
+  float: right;
+  margin-right: 30px;
+  line-height: 75px;
+}
+.icons:hover {
+  transform: translateY(9%);
 }
 /* navbar end */
 .container {
@@ -112,13 +130,6 @@ a:hover {
   border-radius: 3px;
   padding: 10px;
 }
-.selection1 .btnDrop .pPanjang ul li a {
-  display: inline-block;
-  position: relative;
-  background: #0082e6;
-  width: 100%;
-}
-
 .btnDrop .persegi ul li a,
 .btnDrop .pPanjang ul li a {
   display: block;
@@ -145,10 +156,29 @@ a:hover {
   position: absolute;
   display: none;
 }
-.btnDrop .persegi ul li a:hover,
-.btnDrop .pPanjang ul li a:hover {
+.btnDrop .persegi ul li a:hover {
   background: #747c7f;
 }
+.btnDrop .pPanjang ul li a::after {
+  content: "' coming soon '";
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 0 0 5px 5px;
+  font-size: 12px;
+  font-style: italic;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.btnDrop .pPanjang ul li a:hover::after {
+  opacity: 1;
+}
+
 .btnDrop ul li:hover ul.dropdown {
   display: block;
 }
@@ -166,6 +196,7 @@ a:hover {
   flex-direction: column;
   padding-top: 70px;
 }
+
 .content .judul,
 .content2 .judul {
   padding: 15px;
@@ -316,6 +347,9 @@ a:hover {
     background: none;
     color: #0082e6;
   }
+  .iconsHome .icons {
+    display: block;
+  }
   .container .selection1 h1 {
     font-size: 30px;
   }
@@ -335,6 +369,9 @@ a:hover {
   .btnDrop .pPanjang ul li a i {
     float: right;
     line-height: 10px;
+  }
+  .btnDrop .pPanjang ul li a::after {
+    font-size: 8px;
   }
   .content .rumus,
   .content2 .rumus,

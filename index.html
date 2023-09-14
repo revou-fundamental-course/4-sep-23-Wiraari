@@ -19,6 +19,9 @@
         <label for="check" class="checkbtn">
           <i class="fas fa-bars"></i>
         </label>
+        <div class="iconsHome">
+            <i class="fa-solid fa-house icons"></i>
+        </div>
         <label class="logo">Wira-B</label>
         <ul>
           <li><a href="#" id="home">Beranda</a></li>
@@ -56,10 +59,10 @@
                         <li><a href="#">P. Panjang 
                             <i class="fa-solid fa-sort-down"></i>
                         </a>
-                        <ul class="dropdown">
-                            <li><a href="#">Htg Luas</a></li>
-                            <li><a href="#">Htg Keliling</a></li>
-                        </ul>
+                            <!-- <ul class="dropdown">
+                                <li><a href="#">Htg Luas</a></li>
+                                <li><a href="#">Htg Keliling</a></li>
+                            </ul> -->
                         </li>
                     </ul>
                 </div>
@@ -69,7 +72,7 @@
         </div>
     </div>
 
-    <div class="content" id="content">
+    <div class="content" id="content">       
         <div class="judul">
             <h2>Luas Persegi</h1>
         </div>
@@ -85,7 +88,7 @@
         <div class="hitungLuas">
             <h2>Hitung Luas Persegi</h2>
             <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
-            <input type="text" id="sisiLuas" placeholder="Nilai sisi">
+            <input type="text" id="sisiLuas" onkeypress="return validasiNumber(event)" placeholder="Nilai sisi">
             <div class="hasil">
                 <p id="rumusLuas"></p>
                 <p id="jumlahLuas"></p>
@@ -113,7 +116,7 @@
         <div class="hitungLuas">
             <h2>Hitung Luas Persegi</h2>
             <p class="text1">Silahkan input nilai pada kolom dibawah ini </p>
-            <input type="text" id="sisiKeliling" placeholder="Nilai sisi">
+            <input type="text" id="sisiKeliling" onkeypress="return validasiNumber(event)" placeholder="Nilai sisi">
             <div class="hasil">
                 <p id="rumusKeliling"></p>
                 <p id="jumlahKeliling"></p>
